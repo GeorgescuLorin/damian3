@@ -1,0 +1,235 @@
+/* === GENERAL STYLES === */
+
+*{
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+body {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* === HEADER STYLES === */
+
+.cover{
+  background: url('assets/damian.jpg') no-repeat center/cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+}
+
+.wrapper{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text{
+  background: hsla(100,0%,0%,.3);
+  color: #dedede;
+  padding: .625rem;
+  margin: 0 auto;
+  letter-spacing: .2rem;
+}
+
+.tagline{
+  font-family: 'muli';
+  margin: .5rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 20rem;
+  margin: .5rem auto;
+}
+
+.headline{
+  color: #d2ba87;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.15rem;
+  margin: 1.5rem;
+  letter-spacing: .3rem;
+}
+
+.date{
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after{
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* === LOCATION STYLES === */
+
+.location{
+  text-align: center;
+}
+
+.loc img{
+  height: 9rem;
+}
+
+.loc h3 {
+  font-weight: 700;
+}
+
+.loc::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+/* === PROGRAM STYLES === */
+
+.program{
+  color: #d2ba87;
+  background-color: hsla(100, 0%, 0%, .6);
+  width: 100vw;
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p{
+    font-style: italic;
+  }
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+/* === FOOTER STYLES === */
+
+footer{
+  display: table;
+  background-color: #606060;
+  color: #fff;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: .875rem;
+}
+
+ .footer-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+/* === @MEDIA STYLES === */
+
+@media (min-width: 768px) {
+  
+  .tagline {
+    text-transform: uppercase;
+  }
+  
+  .text h1 {
+    font-size: 7rem;
+  }
+  
+  .text{
+    width: 70%;
+    padding: 1.25rem;
+    border-radius: 4px;
+  }
+  
+.cover{
+    background: url('assets/damian.jpg') no-repeat 70% center/cover;
+  }
+  
+  .loc {
+    display: inline-block;
+    width: 40%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .loc::after {
+    display: none;
+  }
+  
+  .wrapper-program{
+    width: 30vw;
+    margin: 0 auto;
+  }
+  
+  footer {
+    height: 8vh;
+  }
+}
